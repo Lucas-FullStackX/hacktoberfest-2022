@@ -1,28 +1,24 @@
-body {
-	background-size: 5px 5px;
-	background-image: radial-gradient(hsla(56 100% 10% / 0.2) 0.5px, hsla(56 100% 45% / 1) 0.5px);
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+h2 {
+	font-family: 'Silkscreen', cursive;
 }
 input[type='range'] {
 	-webkit-appearance: none;
-	width: 200px;
 	height: 1.5rem;
 	background: transparent;
-	background-image: linear-gradient(#75d1f0, #75d1f0);
+	background-image: linear-gradient(#0e8543, #0e8543);
 	background-size: 0% 100%;
 	background-repeat: no-repeat;
 }
 input[type='range']::-webkit-slider-thumb {
 	width: 1.5rem;
 	height: 1.5rem;
-
-	background-color: #fe0;
+	background-color: #fafafa;
 	border-radius: 0;
-	border: 4px solid #75d1f0;
+	border: 4px solid #0e8543;
 	-webkit-appearance: none;
 }
-
 .range {
-	color: aliceblue;
 	height: 1.5rem;
 	width: 100%;
 	cursor: pointer;
@@ -30,6 +26,27 @@ input[type='range']::-webkit-slider-thumb {
 	overflow: hidden;
 	background-color: transparent;
 }
-.bg-dark-punk {
-	background-color: #333000;
+.bg-mc-dark {
+	background-color: #1f1f1f;
+}
+.bg-grass {
+	background-color: #0e8543;
+}
+.grass {
+	color: #0e8543;
+}
+.floating-img {
+	transform: translateY(-25%);
+	animation: floater 2s infinite;
+	transition: ease 0.3s;
+}
+@keyframes floater {
+	0% {
+		transform: translateY(-25%);
+		transition: ease 0.5s;
+	}
+	50% {
+		transform: translateY(2%);
+		transition: ease 0.5s;
+	}
 }
