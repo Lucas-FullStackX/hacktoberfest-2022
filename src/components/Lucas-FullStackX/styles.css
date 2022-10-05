@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
-h2 {
+h2,
+p {
 	font-family: 'Silkscreen', cursive;
+}
+.bg-stone {
+	background-size: 80px;
+	background-image: url('../../../public/Lucas-FullStackX/stone.png');
 }
 input[type='range'] {
 	-webkit-appearance: none;
@@ -34,6 +39,12 @@ input[type='range']::-webkit-slider-thumb {
 }
 .grass {
 	color: #0e8543;
+}
+.grass-border {
+	border: 3px solid #0e8543;
+}
+.grass-border-inter {
+	box-shadow: inset 0 0 0 3px #0e8543;
 }
 .floating-img {
 	transform: translateY(-25%);
